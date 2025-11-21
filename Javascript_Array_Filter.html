@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <h2>Filter Names by First Letter</h2>
-    <ul id="result-list"></ul>
 
     <script>
         const people = [
@@ -35,18 +32,15 @@
             "Julia James"
         ];
 
+        // Choose the letter to filter by
         const firstLetter = "B";
 
+        // Use filter() to create a new array
         const result = people.filter(name => name.charAt(0) === firstLetter);
 
+        // Display in console only (as required)
         console.log("Names starting with " + firstLetter + ":");
         console.log(result);
-
-        const list = document.getElementById("result-list");
-        result.forEach(name => {
-            list.innerHTML += `<li>${name}</li>`;
-        });
     </script>
 </body>
-
 </html>
