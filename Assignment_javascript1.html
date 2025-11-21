@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list1"></ul>
+
+    <script>
+        for (let i = 1; i <= 20; i++) {
+
+            // skip 5, 10 & 15
+            if (i === 5 || i === 10 || i === 15) {
+                continue;
+            }
+            document.getElementById("list1").innerHTML += `<li>${i}</li>`;
+        }
+    </script>
+</body>
+</html>
